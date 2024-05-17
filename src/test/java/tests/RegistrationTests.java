@@ -23,9 +23,10 @@ public class RegistrationTests extends TestBase {
         void successfulRegistrationPage() {
 
             open("/automation-practice-form");
-            $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
             executeJavaScript("$('#fixedban').remove()");
             executeJavaScript("$('footer').remove()");
+            $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+
 
             $("first_name").setValue("Anna");
             $("#lastName").setValue("Ivanova");

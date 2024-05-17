@@ -6,7 +6,6 @@ import pages.components.ResultComponent;
 
 import static com.codeborne.selenide.Condition.cssValue;
 import static com.codeborne.selenide.Condition.text;
-
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -27,15 +26,18 @@ public class RegistrationPage {
             SubmitButton = $("#submit");
 
 
+
     CalendarComponent calendarComponent = new CalendarComponent();
     ResultComponent resultComponent = new ResultComponent();
 
 
     public RegistrationPage openPage() {
            open("/automation-practice-form");
-           $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
            executeJavaScript("$('#fixedban').remove()");
            executeJavaScript("$('footer').remove()");
+           $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+
+
            return this;
     }
     public RegistrationPage setFirstName(String value) {
