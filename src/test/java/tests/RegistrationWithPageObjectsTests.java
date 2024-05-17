@@ -27,7 +27,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
                 .checkResult("Student Email", "Anna@Ivanova.com")
                 .checkResult("Gender", "Other")
                 .checkResult("Mobile", "3752911122")
-                .checkResult("Date of Birth", "2 May,1985")
+                .checkResult("Date of Birth", "12 May,1985")
                 .checkResult("Subjects", "English")
                 .checkResult("Hobbies", "Reading")
                 .checkResult("Address", "Street 1")

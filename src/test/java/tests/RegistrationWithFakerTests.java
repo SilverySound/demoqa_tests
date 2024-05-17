@@ -12,11 +12,6 @@ public class RegistrationWithFakerTests extends TestBase {
     @Test
     void successfulRegistrationTest() {
 
-        Faker faker = new Faker();
-        String firstName = faker.name().firstName(),
-                lastName = faker.name().LastName(),
-                email = faker.internet().emailAddress();
-
 
         registrationPage.openPage()
                 .setFirstName("Anna")
